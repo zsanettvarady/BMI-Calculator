@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mali:400,500" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+
+<div class="jumbroton text-center">
+  <h1>Calculate your BMI Index</h1>
+</div>
+
+    <div class="container box text-center">
+      <form class="bmiForm">
+        <div class="row radioContainer">
+          <div class="col-sm-6 col-sm-offset-3">
+            <label class="radioBox">
+              <input type="radio" name="sex">Female
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row radioContainer">
+          <div class="col-sm-6 col-sm-offset-3">
+            <label class="radioBox">
+              <input type="radio" name="sex">Male
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row inputContainer">
+          <div class="col-sm-6 col-sm-offset-3 text-center">
+            <input class="inputBox weightInput" type="text" name="weight" placeholder="weight" >kg
+          </div>
+        </div>
+        <div class="row inputContainer">
+          <div class="col-sm-6 col-sm-offset-3 text-center">
+            <input class="inputBox heightInput" type="text" name="height" placeholder="height" >cm
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 text-center">
+            <button type="button" name="button" value="Calculate BMI" onClick="calculateBmi()">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="container result">
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <h3 class="titleBMI">Your BMI is:</h3>
+          <h3 class="bmi"></h3>
+          <h4 class="text"></h4>
+        </div>
+      </div>
+    </div>
+
+  <script src="app.js"></script>
+
+  </body>
+</html>
