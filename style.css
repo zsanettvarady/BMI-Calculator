@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  background-image: url(lifestyle.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Lato';
+  font-weight: 300;
+  height: 120vh;
+  color: #555;
+
+}
+
+.mainTitle h1 {
+  margin-top: 80px;
+}
+
+.box {
+  margin-top: 120px;
+  height: 360px;
+  width: 400px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.inputBox {
+
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+input,button:focus {
+  outline: none;
+}
+
+.radioContainer {
+  margin: 10px 0px;
+}
+
+.inputContainer {
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 35px;
+  margin-right: 20px;
+  margin-top: 50px;
+  border-style: none;
+  background-color: #ff6666;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+label {
+  font-weight: 300;
+}
+
+.radioBox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  user-select: none;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.radioBox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.result {
+  width: 400px;
+  top: 700px;
+  left: 700px;
+  box-shadow: 0px 10px 50px #fff;
+  background-color: rgba(0, 174, 255, 0.9);
+}
+
+h3,h4 { 
+  color: #fff; 
+  font-family: 'Mali', cursive;
+}
+
+.bmi {
+  color: #000;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+/* On mouse-over, add a grey background color */
+.radioBox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radioBox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioBox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
