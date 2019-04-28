@@ -1,3 +1,4 @@
+
 function calculateBmi() {
 
   var weight = document.querySelector('.weightInput').value;
